@@ -2,7 +2,10 @@
 
 Segunda etapa del proyecto **Pizzería Mamma Mía**, desarrollado con **React** como parte del módulo de React. En este hito se agregan los formularios de **Register** y **Login**, aplicando **estado de los componentes (`useState`)** y **eventos** (`onChange`, `onSubmit`, `onClick`). Se mantiene todo lo construido en el Hito 1.
 
-## 📋 Descripción
+## Demo en línea
+https://hito2-react-pizzeria-mamma-mia.vercel.app/
+
+## Descripción
 
 La aplicación muestra una página de inicio de una pizzería con:
 
@@ -13,7 +16,7 @@ La aplicación muestra una página de inicio de una pizzería con:
 
 Por ahora los botones no tienen funcionalidad: el objetivo de este hito es construir y organizar la interfaz.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
@@ -111,14 +114,13 @@ Pie de página con el texto: *© 2021 - Pizzería Mamma Mia! - Todos los derecho
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone https://github.com/Sahadia88/hito2_REACT-pizzeria_mamma_mia.git
    ```
 
 2. Entra a la carpeta del proyecto:
 
    ```bash
-   cd nombre-del-repositorio
-   ```
+   cd hito2_REACT-pizzeria_mamma_mia
 
 3. Instala las dependencias:
 
