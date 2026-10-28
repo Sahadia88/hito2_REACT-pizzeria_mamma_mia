@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import { formatNumber } from "../utils/formatNumber";
 
-const Navbar = () => {
+const Navbar = ({ onNavegar }) => {
   const total = 25000;
   const token = false;
 
@@ -11,7 +11,12 @@ const Navbar = () => {
         <span className="navbar-brand mb-0 me-2">Pizzería Mamma Mía!</span>
 
         {/* Siempre visible */}
-        <button className="btn btn-outline-light btn-sm">Home</button>
+        <button
+          className="btn btn-outline-light btn-sm"
+          onClick={() => onNavegar("home")}
+        >
+          Home
+        </button>
 
         {/* Depende del token */}
         {token ? (
@@ -21,8 +26,18 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <button className="btn btn-outline-light btn-sm">Login</button>
-            <button className="btn btn-outline-light btn-sm">Register</button>
+            <button
+              className="btn btn-outline-light btn-sm"
+              onClick={() => onNavegar("login")}
+            >
+              Login
+            </button>
+            <button
+              className="btn btn-outline-light btn-sm"
+              onClick={() => onNavegar("register")}
+            >
+              Register
+            </button>
           </>
         )}
       </div>

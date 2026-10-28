@@ -1,6 +1,6 @@
-# Pizzería Mamma Mía – Hito 1
+# Pizzería Mamma Mía – Hito 2
 
-Primera etapa del proyecto **Pizzería Mamma Mía**, desarrollado con **React** como parte del módulo *Introducción a React*. En este hito se construye la estructura base de la aplicación usando componentes reutilizables, props y renderizado condicional.
+Segunda etapa del proyecto **Pizzería Mamma Mía**, desarrollado con **React** como parte del módulo de React. En este hito se agregan los formularios de **Register** y **Login**, aplicando **estado de los componentes (`useState`)** y **eventos** (`onChange`, `onSubmit`, `onClick`). Se mantiene todo lo construido en el Hito 1.
 
 ## 📋 Descripción
 
@@ -40,7 +40,27 @@ src/
 └── main.jsx              → punto de entrada de la aplicación
 ```
 
-## Componentes
+## Novedades del Hito 2
+
+### `Register`
+Formulario con **Email**, **Contraseña** y **Confirmar contraseña**. Al enviar valida que:
+
+1. Ningún campo esté vacío.
+2. La contraseña tenga al menos 6 caracteres.
+3. La contraseña y su confirmación sean iguales.
+
+Si algo falla muestra un mensaje de error; si todo está correcto, un mensaje de éxito.
+
+### `Login`
+Formulario con **Email** y **Contraseña**. Valida que no haya campos vacíos y que la contraseña tenga al menos 6 caracteres, mostrando mensaje de error o de éxito.
+
+### `App` y `Navbar`
+`App` guarda en un estado (`vista`) qué pantalla se muestra (`home`, `login` o `register`) y los botones del `Navbar` lo cambian mediante el evento `onClick`.
+
+### Conceptos aplicados
+`useState`, inputs controlados (`value` + `onChange`), `onSubmit` con `e.preventDefault()`, renderizado condicional (`&&`) y paso de funciones por props.
+
+## Componentes del Hito 1
 
 ### `App`
 Componente raíz. Muestra `Navbar`, `Home` y `Footer`, en ese orden.
